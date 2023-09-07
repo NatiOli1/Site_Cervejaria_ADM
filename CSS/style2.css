@@ -1,0 +1,386 @@
+/*home*/
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bungee+Inline&family=IM+Fell+Great+Primer:ital@1&family=M+PLUS+1p:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@1&family=Martel&family=Ysabeau:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@1&family=M+PLUS+1p:wght@300&family=Martel&family=Ysabeau:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=IM+Fell+Great+Primer:ital@1&family=M+PLUS+1p:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+body {
+    background-image: url(fundo2.png);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+/*NavBar*/
+
+#navbarNavDropdown {
+    margin-left: 22%;
+
+}
+
+#links {
+    gap: 25%;
+    font-family: 'Abel';
+}
+
+/*Carrosel*/
+
+.swiper {
+    float: left;
+    left: 2%;
+    top: 2rem;
+    max-width: 20%;
+    height: auto;
+    position: absolute;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+/*Letra Neon*/
+
+.titulo {
+    align-items: center;
+    margin-right: 20%;
+}
+
+.titulo-neon1 {
+    font-family: sans-serif;
+    font-size: 50px;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #FFB105;
+    text-shadow: 0 0 5px #D49A1A, 0 0 15px #D49A1A, 0 0 30px #D49A1A;
+}
+
+.titulo-neon2 {
+    font-family: sans-serif;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #bce74f;
+    text-shadow: 0 0 5px #CDEF77, 0 0 15px #CDEF77, 0 0 30px #CDEF77;
+
+}
+
+.titulo-neon3 {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Bungee Inline';
+    color: yellow;
+    text-shadow: 0 0 5px rgb(229, 229, 63), 0 0 15px rgb(229, 229, 63), 0 0 30px rgb(229, 229, 63);;
+
+}
+
+.nada {
+    margin-top: 15%;
+}
+
+.slogan {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Bungee Inline';
+    color: #fff;
+    margin-top: 10%;
+}
+
+/* CARDS */
+
+#conteudo {
+    margin-top: 15%;
+}
+
+#conteudo a{
+    text-decoration: none;
+}
+
+.card{
+    background-color: #D49A1A;
+    color: #f8f8f8;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Alegreya Sans', sans-serif;
+    border-radius: 40px;
+    text-align: center;
+}
+.card-title{
+    font-size: 25px;
+}
+.informar{
+    background-color: #f8f8f8;
+    color: black;
+    opacity: 55%;
+    text-align: center;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    font-size: 1.3rem;
+}
+.botao{
+ 
+    background-color: red;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    font-size: 1.3rem;
+    
+}
+.card-link{
+    color: #011E11;
+}
+.titulo-cards{
+    margin-right: 10px;
+    width: 30px;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    margin-top: 1rem;
+    column-gap: 10rem;
+    row-gap: 3rem;
+    flex-wrap: wrap;
+}
+.texto{
+    font-size: 20px;
+}
+
+/*Recuperação/ Modal*/
+.modal-content{
+    background-color: #D49A1A;
+    color: #f8f8f8;
+    justify-content: center;
+    font-family: 'Alegreya Sans', sans-serif;
+    border-radius: 40px;
+    text-align: center;
+}
+
+
+/*footer*/
+
+.direitos {
+    color: #fff;
+    display: flex;
+    margin-top: 5rem;
+    justify-content: center;
+    text-align: center;
+    background: transparent;
+}
+
+/*pedido*/
+
+    .tabelaPedido {
+        margin: 10%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tabelaPedido table tr th{
+        border: 1px solid rgb(233, 219, 20);
+        border-collapse: collapse;
+        color: #fff;
+    }
+
+    .tabelaPedido tr th{
+        padding: 10px 40px;
+        background-color: #000000;
+    }
+
+    .tabelaPedido th img{
+        width: 90px;
+        height: auto;
+        border-radius: 50%;
+    }
+    
+
+@media (max-width:900px)  {
+    .titulo-neon3{
+        font-size: 18px;
+    }
+
+    .slogan{
+        font-size: 14px;
+    }
+
+}
+
+/*celulares*/
+
+@media (max-width:550px), (orientation: portrait){
+    body {
+        background-image: none;
+        background-color: #000000;
+    }
+    #conteudo{
+        margin-top: 0%;
+    }
+    
+    .titulo {
+        background-image: url(fundo3.png);
+        background-repeat: no-repeat;
+        background-position: cover;
+        background-size: 100%;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+
+    #carrosel {
+        height: 0;
+        width: 0;
+        display: none;
+    }
+    .titulo-neon1{
+        font-size: 15px;
+    }
+    .titulo-neon2{
+        font-size: 15px;
+    }
+    .titulo-neon3{
+        font-size: 15px;
+        margin-bottom: 20%;
+    }
+    
+    .slogan{
+        font-size: 11px;
+    }
+    .card {
+        width: 10rem;
+    }
+
+    .tabelaPedido {
+        margin: 5%;
+    }
+
+    .tabelaPedido tr th{
+        padding: 5px 10px;
+    }
+}
+@media(max-width: 720px), (orientation: landscape) {
+    .titulo-neon3{
+        font-size: 14px;
+    }
+    .titulo-neon1{
+        font-size: 15px;
+    }
+    .titulo-neon2{
+        font-size: 15px;
+    }
+    .slogan{
+        font-size: 10px;
+    }
+}
+
+@media(min-width: 810px) {
+    .titulo-neon3{
+        font-size: 16px;
+    }
+    .titulo-neon1{
+        font-size: 17px;
+    }
+    .titulo-neon2{
+        font-size: 17px;
+    }
+    .slogan{
+        font-size: 13px;
+    }
+}
+
+@media(min-width: 950px) {
+    .titulo-neon3{
+        font-size: 20px;
+    }
+    .titulo-neon1{
+        font-size: 24px;
+    }
+    .titulo-neon2{
+        font-size: 24px;
+    }
+    .slogan{
+        font-size: 14px;
+    }
+}
+
+@media(min-width: 1080px){
+    .titulo-neon3{
+        font-size: 20px;
+    }
+    .titulo-neon1{
+        font-size: 25px;
+    }
+    .titulo-neon2{
+        font-size: 25px;
+    }
+    .slogan{
+        font-size: 16px;
+    }
+}
+
+@media(min-width: 1200px){
+    .titulo-neon3{
+        font-size: 25px;
+    }
+    .titulo-neon1{
+        font-size: 30px;
+    }
+    .titulo-neon2{
+        font-size: 30px;
+    }
+    .slogan{
+        font-size: 18px;
+    }
+}
+
+@media(min-width: 1600px){
+    .titulo-neon3{
+        font-size: 35px;
+    }
+    .titulo-neon1{
+        font-size: 45px;
+    }
+    .titulo-neon2{
+        font-size: 45px;
+    }
+    .slogan{
+        font-size: 25px;
+    }
+    .nav-item{
+        font-size: 18px;
+    }
+    
+}
+
+
+
+
+

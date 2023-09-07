@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Dela's Cervejaria - Cadastrar</title>
+    <link rel="shortcut icon" href="imagens/logo2.png" width="60" height="60"type="image/x-icon">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style4.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <!-- Importante -->
+    <nav class="navbar navbar-expand-lg bg-transparent border-bottom border-body">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" style="font-family: 'IM Fell Great Primer'; margin-left: 2%;" href="home.html">
+                <img src="imagens/logo.png" alt="Logo" width="60" height="60" class="d-inline-block">
+                Dela's Cervejaria
+            </a>
+            <button class="navbar-toggler text-warning" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-warning"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-1.2" id="links">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">Catálogo</a>
+                        <ul class="dropdown-menu bg-transparent">
+                            <li><a class="dropdown-item text-light bg-transparent" href="cervejas.html">Cervejas</a>
+                            </li>
+                            <li><a class="dropdown-item text-light bg-transparent" href="chope.html">Chopes</a></li>
+                            <li><a class="dropdown-item text-light bg-transparent"
+                                    href="refrigerantesSucos.html">Refrigerantes e Sucos</a></li>
+                            <li><a class="dropdown-item text-light bg-transparent" href="vinhosDestilados.html">Vinhos e
+                                    Destilados</a></li>
+                            <li><a class="dropdown-item text-light bg-transparent"
+                                    href="energeticos.html">Energéticos</a></li>
+                            <li><a class="dropdown-item text-light bg-transparent" href="gelo.html">Gelos</a></li>
+                            <li><a class="dropdown-item text-light bg-transparent"
+                                    href="salgadinhoAperitivos.html">Salgadinhos e Aperitivos</a></li>
+                            <li><a class="dropdown-item text-light bg-transparent" href="drinks.html">Drinks</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="pedido.html">Pedidos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="duvidas.html">Dúvidas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="contatos.html">Contatos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cadastrar -->
+    <div class="cadatrar">
+        <div class="titulo">
+            <p class="titulo-neon2 fs-1">DADOS PESSOAIS</p>
+        </div>
+        <div class="dados">
+        <form class="formularioDados">
+            <input class="informar1" type="text" placeholder="NOME COMPLETO"required><br>
+            <div class="cadastrard">
+                <input class="informar2" type="text" placeholder="CPF" maxlength="11" required>
+                <input class="informar2" type="text" placeholder="RG" maxlength="12" required>
+                <input class="informar2" type="date" placeholder="DATA DE NASCIMENTO" required>
+                <input class="informar2" type="tel" placeholder="CELULAR" maxlength="16" required>
+            </div>
+
+            <div class="titulo">
+                <p class="titulo-neon2 fs-1">ENDEREÇO DE COBRANÇA</p>
+            </div>
+
+            <div class="cadastrard">
+                <input class="informar3" type="text" placeholder="CEP" maxlength="8" required>
+                <input class="informar3" type="text" placeholder="RUA" required>
+                <input class="informar3" type="tel" placeholder="NUMERO" maxlength="4" required>
+            </div>
+            <div class="cadastrard">
+                <input class="informar3" type="text" placeholder="COMPLEMENTO">
+                <input class="informar3" type="text" placeholder="BAIRRO" required>
+                <input class="informar3" type="text" placeholder="CIDADE" required>
+            </div>
+            <div class="titulo">
+                <p class="titulo-neon2 fs-1">CREDENCIAIS PARA LOGIN</p>
+            </div>
+
+            <div class="cadastrard">
+                <input class="informar1" type="email" placeholder="EMAIL" required>
+            </div>
+            <div class="cadastrard">
+                <input class="informar1" type="password" placeholder="SENHA" required>
+            </div>
+
+            <div class="d-grid gap-3 col-1 mx-auto" style="font-family: Alegreya Sans;">
+                <button class="btn btn-danger" type="submit" onclick="mensagemCadastro()">confirmar</button>
+            </div>
+        </form>
+
+        </div>
+<!-- Footer/Rodape -->
+        <footer id="copyright">
+            <address class="direitos">
+                &#169; 2023 - Todos os direitos reservados<br>
+            </address>
+        </footer>
+
+</body>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+    function mensagemCadastro(){
+        confirm('Foi cadastrado com sucesso!!')
+    }
+</script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        effect: "cube",
+        grabCursor: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        cubeEffect: {
+            shadow: true,
+            slideShadows: true,
+            shadowOffset: 20,
+            shadowScale: 0.94,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+    });
+</script>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dela's Cervejaria</title>
+    <link rel="shortcut icon" href="imagens/logo2.png" width="60" height="60" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-transparent border-bottom border-body">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" style="font-family: 'IM Fell Great Primer'; margin-left: 2%;" href="#">
+                <img src="imagens/logo.png" alt="Logo" width="60" height="60" class="d-inline-block">
+                Dela's Cervejaria
+            </a>
+            <button class="navbar-toggler text-warning" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-warning"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-1.2" id="links">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="cadastrar.html">Cadastrar</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">Catálogo</a>
+                        <ul class="dropdown-menu bg-transparent">
+                            <li><a class="dropdown-item text-light bg-transparent" href="cervejas.html">Cervejas</a>
+                            </li>
+                            <li><a class="dropdown-item text-light bg-transparent" href="chope.html">Chopes</a></li>
+                            <li><a class="dropdown-item text-light bg-transparent"
+                                    href="refrigerantesSucos.html">Refrigerantes e Sucos</a></li>
+                            <li><a class="dropdown-item text-light bg-transparent" href="vinhosDestilados.html">Vinhos e
+                                    Destilados</a></li>
+                            <li><a class="dropdown-item text-light bg-transparent"
+                                    href="energeticos.html">Energéticos</a></li>
+                            <li><a class="dropdown-item text-light bg-transparent" href="gelo.html">Gelos</a></li>
+                            <li><a class="dropdown-item text-light bg-transparent"
+                                    href="salgadinhoAperitivos.html">Salgadinhos e Aperitivos</a></li>
+                            <li><a class="dropdown-item text-light bg-transparent" href="drinks.html">Drinks</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="pedido.html">Pedidos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="duvidas.html">Dúvidas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="contatos.html">Contatos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="swiper mySwiper" id="carrosel">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="imagens/carrosel 1.png" />
+            </div>
+            <div class="swiper-slide">
+                <img src="imagens/carrosel 2.png" />
+            </div>
+            <div class="swiper-slide">
+                <img src="imagens/carrosel 3.png" />
+            </div>
+            <div class="swiper-slide">
+                <img src="imagens/carrosel 4.png" />
+            </div>
+            <div class="swiper-slide">
+                <img src="imagens/carrosel 5.png" />
+            </div>
+            <div class="swiper-slide">
+                <img src="imagens/carrosel 6.png" />
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="titulo ">
+        <p class="titulo-neon3">Você esta no site dela's cervejaria</p>
+        <div class="nada">
+            <p class="titulo-neon1">BEM</p>
+            <p class="titulo-neon2">VINDO!</p>
+            <p class="slogan">Não deixe para amanhã a cerveja que você pode beber hoje.</p>
+        </div>
+    </div>
+
+    <br><br>
+    <div id="conteudo">
+        <a href="catalogo.html">
+            <div class="d-grid gap-3 col-8 mx-auto" style="font-family: Alegreya Sans;">
+                <button class="btn btn-danger" type="button">Ir para Catalogo</button>
+            </div>
+        </a>
+        <!-- CARD -->
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <br>
+                    <h5 class="card-title"> <img src="imagens/icons8-male-user-96.png" class="titulo-cards">AUTENTICAÇÃO
+                    </h5><br>
+
+                    <input class="informar" type="email" placeholder="Digite seu Email"><br><br>
+                    <input class="informar" type="password" placeholder="Digite sua Senha">
+                    <a href="cadastrar.html" class="card-link">AINDA NÃO É CADASTRADO?</a><br><br>
+                    <button type="submit" class="botao">ENTRAR</button><br>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <br>
+                    <h5 class="card-title"> <img src="imagens/icons8-access-96.png" class="titulo-cards">RECUPERAÇAO DE
+                        SENHA</h5><br>
+                    <h4 class="texto">Clique para ver seus dados ou recuperar sua senha.</h4><br><br>
+                    <button type="submit" class="botao" data-bs-toggle="modal" data-bs-target="#staticBackdrop">CLIQUE
+                        AQUI</button><br>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <br>
+                    <h5 class="card-title"> <img src="imagens/icons8-shopping-bag-96.png" class="titulo-cards">MEUS
+                        PEDIDOS</h5><br>
+                    <h4 class="texto">Necessário autenticação.</h4><br><br>
+                    <br><br>
+                    <a href="pedido.html" type="submit" class="botao">VER PEDIDO</a><br>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <br>
+                    <h5 class="card-title"> <img src="imagens/icons8-ask-question-96.png" class="titulo-cards">DÚVIDAS
+                        COM O PEDIDO
+                    </h5><br>
+                    <h4 class="texto">leia caso ocorra algum problema com o seu pedido.</h4>
+                    <br><br>
+                    <a href="duvidas.html" type="submit" class="botao">LER</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">RECUPERAÇÃO DE SENHA</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="container">
+                        <h1>Confirmação de Email</h1>
+                        <p>Digite seu e-mail para receber um código de confirmação.</p>
+                        <input class="informar" type="email" id="emailInput" placeholder="Digite seu email"><br><br>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="botao" data-bs-dismiss="modal">FECHAR</button>
+                        <button id="sendButton" class="botao" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">CONFIRMAR CÓDIGO</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Modal 2 -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">RECUPERAÇÃO DE SENHA</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="confirmation-container" id="confirmationContainer">
+                        <p>Um código de confirmação foi enviado para o seu e-mail. Digite o código abaixo:</p>
+                        <input class="informar" type="text" id="codeInput" placeholder="Digite o código">
+                        <button class="botao" id="verifyButton">Verificar</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="botao" data-bs-dismiss="modal">FECHAR</button>
+                    <button type="button" class="botao">SALVAR MUDANÇAS</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer id="copyright">
+        <address class="direitos">
+            &#169; 2023 - Todos os direitos reservados<br>
+        </address>
+    </footer>
+
+</body>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        effect: "cube",
+        grabCursor: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        cubeEffect: {
+            shadow: true,
+            slideShadows: true,
+            shadowOffset: 20,
+            shadowScale: 0.94,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+    });
+</script>
+
+
+
+</html>

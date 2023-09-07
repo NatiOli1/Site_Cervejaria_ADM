@@ -1,0 +1,171 @@
+/*home*/
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bungee+Inline&family=IM+Fell+Great+Primer:ital@1&family=M+PLUS+1p:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@1&family=Martel&family=Ysabeau:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer:ital@1&family=M+PLUS+1p:wght@300&family=Martel&family=Ysabeau:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=IM+Fell+Great+Primer:ital@1&family=M+PLUS+1p:wght@300&display=swap');
+/*import sarah*/
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+body {
+    background-image: url(fundo2.png);
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: cover;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+/*NavBar*/
+
+#navbarNavDropdown {
+    margin-left: 22%;
+
+}
+
+#links {
+    gap: 25%;
+    font-family: 'Abel';
+}
+
+
+
+/* Cadastro de dados */
+.cadastrar{
+   margin-top: 2rem;
+}
+.informar2{
+    
+    background-color: #fdfdfd;
+    color: #D49A1A;
+    font-family: 'Alegreya Sans', sans-serif;
+    opacity: 79%;
+    text-align: center;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    font-size: 1.3rem;
+    width: 100%;
+    
+   
+}
+/* NOME COMPLETO SEPARADO */
+.informar1{
+    display: inline-flex;
+    background-color: #fdfdfd;
+    color: #D49A1A;
+    font-family: 'Alegreya Sans', sans-serif;
+    opacity: 79%;
+    text-align: center;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    font-size: 1.3rem;
+    width: 100%;
+    
+}
+.dados{
+    margin: 5%;
+}
+
+/*Cadatrar endereço*/ /*Cadatrar cradenciais*/
+.informar3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fdfdfd;
+    color: #D49A1A;
+    font-family: 'Alegreya Sans', sans-serif;
+    opacity: 79%;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    font-size: 1.3rem;
+    width: 100%;
+    
+} 
+.cadastrard{
+    display: flex;
+    column-gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+/*Duvidas*/
+.texto1{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px
+}
+.textoa{
+    color:#FFD501 ;
+}
+.textob{
+    color:#FFFFFF ;
+}
+/* TITULO NEON */
+.titulo-neon2 {
+    color: #FFB105;
+    text-shadow: 0 0 5px #D49A1A, 0 0 15px #D49A1A, 0 0 30px #D49A1A;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: monospace;
+    margin-top: 5rem;
+    font-family: 'Train One', cursive;
+}
+input::placeholder {
+    color: #D49A1A;
+  }
+
+  /*footer*/
+  .direitos {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: transparent;
+}
+
+.formularioDados button{
+    margin-top: 10%;
+}
+
+@media (max-width: 400px), (orientation: portrait){
+    body {
+        background-image: none;
+        background-color: black;
+    }
+    .cadastrard{
+        display: grid;
+        gap: 1rem;
+        margin-top: 1rem;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+
+
+@media (min-width:1200px) {
+    .nav-item{
+        font-size: 18px;
+    }
+}
